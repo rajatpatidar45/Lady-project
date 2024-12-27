@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wishlist Popup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .durafal-list {
+      width: 100%;
+      max-width: 400px;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .durafal-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .durafal-list ul li {
+      margin: 0;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .durafal-list ul li:last-child {
+      border-bottom: none;
+    }
+
+    .durafal-list ul li a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #0D8FDD;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .durafal-list ul li a:hover {
+      background-color: #0D8FDD;
+      color: #fff;
+    }
+
+    .durafal-list .active a {
+      background-color: #0D8FDD;
+      color: #fff;
+    }
+
+    .arrow-right {
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid currentColor;
+      border-right: 2px solid currentColor;
+      transform: rotate(45deg);
+      transition: transform 0.3s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="durafal-list">
+    <ul>
+      <li class="active">
+        <a href="http://localhost/wordpress/app-sphere-enterprises/flooring/">Flooring
+          <span class="arrow-right"></span>
+        </a>
+      </li>
+      <li>
+        <a href="http://localhost/wordpress/app-sphere-enterprises/water-proofing/">Water Proofing
+          <span class="arrow-right"></span>
+        </a>
+      </li>
+      <li>
+        <a href="http://localhost/wordpress/app-sphere-enterprises/performance-coatings/">Performance Coatings
+          <span class="arrow-right"></span>
+        </a>
+      </li>
+      <li>
+        <a href="http://localhost/wordpress/app-sphere-enterprises/car-park/">Car Park
+          <span class="arrow-right"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

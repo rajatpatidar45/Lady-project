@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADY - PRODUCT DETAILS</title>
+    <!-- Favicon  -->
+    <link rel="icon" href="img/lady-fevicon.png" loading="lazy">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header Start-->
+    <header>
+        <!-- Announcement Bar -->
+        <div class="announcement-bar bg-dark text-white text-center fixed-top p-2 letter-spacing-4">
+            In The Blue : The Denim Edit Live Now
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid mt-3">
+                <!-- Hamburger Menu for Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Logo Centered -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo-lady.png" alt="" loading="lazy">
+                </a>
+                <!-- Icons -->
+                <div class="navbar-icons text-center mt-lg-0">
+                    <button onclick="window.location.href='account.html'">
+
+                        <svg fill="#000000" width="24" height="24" version="1.1" id="lni_lni-user"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                            <g>
+                                <path
+                                    d="M32,36.4c8.2,0,14.9-6.7,14.9-14.9S40.2,6.5,32,6.5s-14.9,6.7-14.9,14.9S23.8,36.4,32,36.4z M32,10
+                                             c6.3,0,11.4,5.1,11.4,11.4c0,6.3-5.1,11.4-11.4,11.4c-6.3,0-11.4-5.1-11.4-11.4C20.6,15.2,25.7,10,32,10z">
+                                </path>
+                                <path
+                                    d="M62.1,54.4c-8.3-7.1-19-11-30.1-11s-21.8,3.9-30.1,11C1.1,55,1,56.1,1.7,56.9c0.6,0.7,1.7,0.8,2.5,0.2
+                                             c7.7-6.5,17.6-10.1,27.9-10.1s20.2,3.6,27.9,10.1c0.3,0.3,0.7,0.4,1.1,0.4c0.5,0,1-0.2,1.3-0.6C63,56.1,62.9,55,62.1,54.4z">
+                                </path>
+                            </g>
+                        </svg>
+                    </button>
+                    <button class="search-icon" id="searchIcon">
+                        <svg fill="#000000" width="24" height="24" version="1.1" id="lni_lni-search-alt"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                            <path
+                                d="M62.1,57L44.6,42.8c3.2-4.2,5-9.3,5-14.7c0-6.5-2.5-12.5-7.1-17.1v0c-9.4-9.4-24.7-9.4-34.2,0C3.8,15.5,1.3,21.6,1.3,28
+                                     c0,6.5,2.5,12.5,7.1,17.1c4.7,4.7,10.9,7.1,17.1,7.1c6.1,0,12.1-2.3,16.8-6.8l17.7,14.3c0.3,0.3,0.7,0.4,1.1,0.4
+                                     c0.5,0,1-0.2,1.4-0.6C63,58.7,62.9,57.6,62.1,57z M10.8,42.7C6.9,38.8,4.8,33.6,4.8,28s2.1-10.7,6.1-14.6c4-4,9.3-6,14.6-6
+                                     c5.3,0,10.6,2,14.6,6c3.9,3.9,6.1,9.1,6.1,14.6S43.9,38.8,40,42.7C32,50.7,18.9,50.7,10.8,42.7z">
+                            </path>
+                        </svg>
+                    </button>
+                    <!-- Search Bar Container -->
+                    <div id="searchBar" class="search-bar-container">
+                        <div class="search-bar">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Search..."
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">
+                                        <svg fill="#000000" width="24" height="24" version="1.1"
+                                            id="lni_lni-search-alt1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;"
+                                            xml:space="preserve">
+                                            <path
+                                                d="M62.1,57L44.6,42.8c3.2-4.2,5-9.3,5-14.7c0-6.5-2.5-12.5-7.1-17.1v0c-9.4-9.4-24.7-9.4-34.2,0C3.8,15.5,1.3,21.6,1.3,28
+                                     c0,6.5,2.5,12.5,7.1,17.1c4.7,4.7,10.9,7.1,17.1,7.1c6.1,0,12.1-2.3,16.8-6.8l17.7,14.3c0.3,0.3,0.7,0.4,1.1,0.4
+                                     c0.5,0,1-0.2,1.4-0.6C63,58.7,62.9,57.6,62.1,57z M10.8,42.7C6.9,38.8,4.8,33.6,4.8,28s2.1-10.7,6.1-14.6c4-4,9.3-6,14.6-6
+                                     c5.3,0,10.6,2,14.6,6c3.9,3.9,6.1,9.1,6.1,14.6S43.9,38.8,40,42.7C32,50.7,18.9,50.7,10.8,42.7z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="close-btn" id="closeSearchBar">&times;</button>
+                        </div>
+                    </div>
+                    <!-- Heart icon -->
+                    <button class="wishlist-icon" data-bs-toggle="modal" data-bs-target="#wishlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="22" height="22" x="0" y="0" viewBox="0 0 480 480"
+                            style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                            <g>
+                                <path
+                                    d="M348 0c-43 .066-83.281 21.04-108 56.223A132.242 132.242 0 0 0 132 0C61.68 0 0 65.426 0 140c0 72.68 41.04 147.535 118.688 216.48a638.51 638.51 0 0 0 117.64 82.625 8.015 8.015 0 0 0 7.344 0 638.546 638.546 0 0 0 117.601-82.625C438.961 287.535 480 212.68 480 140 480 65.426 418.32 0 348 0zM240 422.902C210.617 406.688 16 293.406 16 140 16 73.945 70.2 16 132 16c41.867.074 80.46 22.66 101.031 59.129 1.54 2.351 4.16 3.766 6.969 3.766s5.43-1.415 6.969-3.766C267.539 38.66 306.133 16.074 348 16c61.8 0 116 57.945 116 124 0 153.406-194.617 266.688-224 282.902zm0 0"
+                                    fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                            </g>
+                        </svg>
+                    </button>
+                    <!-- Wishlist Modal -->
+                    <div class="modal" id="wishlist" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-dark d-flex justify-content-end">
+                                    <span class="fs-15 mr-40 d-flex justify-content-end"
+                                        style="color: white !important;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0"
+                                            y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve" class="">
+                                            <g>
+                                                <g fill="#000">
+                                                    <path
+                                                        d="M10.081 2a4.494 4.494 0 1 0 0 8.989 4.494 4.494 0 0 0 0-8.989zM10.528 13.184c.253-.367.01-.927-.435-.927H8.896a6.688 6.688 0 0 0-6.688 6.688 2.73 2.73 0 0 0 2.73 2.73h5.22c.452 0 .694-.574.432-.941a6.555 6.555 0 0 1-1.22-3.82c0-1.384.428-2.67 1.158-3.73z"
+                                                        fill="#ffffff" opacity="1" data-original="#000000" class="">
+                                                    </path>
+                                                    <path fill-rule="evenodd"
+                                                        d="M21.04 16.915a5.085 5.085 0 1 1-10.17 0 5.085 5.085 0 0 1 10.17 0zm-2.174-1.933a.75.75 0 0 1 .07 1.059l-2.57 2.933a1.25 1.25 0 0 1-1.829.054l-1.443-1.46a.75.75 0 1 1 1.068-1.055l.876.888a.5.5 0 0 0 .732-.022l2.037-2.326a.75.75 0 0 1 1.059-.07z"
+                                                        clip-rule="evenodd" fill="#ffffff" opacity="1"
+                                                        data-original="#000000" class=""></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        User@gmail.com</span>
+                                    <button type="button" class="" data-bs-dismiss="modal" aria-label="Close"> <svg
+                                            xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0"
+                                            y="0" viewBox="0 0 64 64" style="enable-background:new 0 0 512 512"
+                                            xml:space="preserve" class="">
+                                            <g>
+                                                <path
+                                                    d="M4.59 59.41a2 2 0 0 0 2.83 0L32 34.83l24.59 24.58a2 2 0 0 0 2.83-2.83L34.83 32 59.41 7.41a2 2 0 0 0-2.83-2.83L32 29.17 7.41 4.59a2 2 0 0 0-2.82 2.82L29.17 32 4.59 56.59a2 2 0 0 0 0 2.82z"
+                                                    fill="#ffffff" opacity="1" data-original="#000000"></path>
+                                            </g>
+                                        </svg></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="wishlist-item">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div
+                                                    class="col-12 d-flex justify-content-between align-items-center mb-1">
+                                                    <h5>My Wishlist</h5>
+                                                    <div class="wishlist-heading-icons">
+                                                        <button id="share-icon" class="share-icon">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
+                                                                height="24" x="0" y="0" viewBox="0 0 512 512"
+                                                                style="enable-background:new 0 0 512 512"
+                                                                xml:space="preserve" class="">
+                                                                <g>
+                                                                    <path
+                                                                        d="M453.332 85.332c0 38.293-31.039 69.336-69.332 69.336s-69.332-31.043-69.332-69.336C314.668 47.043 345.707 16 384 16s69.332 31.043 69.332 69.332zm0 0"
+                                                                        fill="#000000" opacity="1"
+                                                                        data-original="#000000">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M384 170.668c-47.063 0-85.332-38.273-85.332-85.336C298.668 38.273 336.938 0 384 0s85.332 38.273 85.332 85.332c0 47.063-38.27 85.336-85.332 85.336zM384 32c-29.418 0-53.332 23.938-53.332 53.332 0 29.398 23.914 53.336 53.332 53.336s53.332-23.938 53.332-53.336C437.332 55.938 413.418 32 384 32zM453.332 426.668C453.332 464.957 422.293 496 384 496s-69.332-31.043-69.332-69.332c0-38.293 31.039-69.336 69.332-69.336s69.332 31.043 69.332 69.336zm0 0"
+                                                                        fill="#000000" opacity="1"
+                                                                        data-original="#000000">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M384 512c-47.063 0-85.332-38.273-85.332-85.332 0-47.063 38.27-85.336 85.332-85.336s85.332 38.273 85.332 85.336c0 47.059-38.27 85.332-85.332 85.332zm0-138.668c-29.418 0-53.332 23.938-53.332 53.336C330.668 456.063 354.582 480 384 480s53.332-23.938 53.332-53.332c0-29.398-23.914-53.336-53.332-53.336zM154.668 256c0 38.293-31.043 69.332-69.336 69.332C47.043 325.332 16 294.293 16 256s31.043-69.332 69.332-69.332c38.293 0 69.336 31.039 69.336 69.332zm0 0"
+                                                                        fill="#000000" opacity="1"
+                                                                        data-original="#000000">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M85.332 341.332C38.273 341.332 0 303.062 0 256s38.273-85.332 85.332-85.332c47.063 0 85.336 38.27 85.336 85.332s-38.273 85.332-85.336 85.332zm0-138.664C55.914 202.668 32 226.602 32 256s23.914 53.332 53.332 53.332c29.422 0 53.336-23.934 53.336-53.332s-23.914-53.332-53.336-53.332zm0 0"
+                                                                        fill="#000000" opacity="1"
+                                                                        data-original="#000000">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M135.703 245.762c-7.426 0-14.637-3.864-18.562-10.774-5.825-10.218-2.239-23.254 7.98-29.101l197.95-112.852c10.218-5.867 23.253-2.281 29.1 7.977 5.825 10.218 2.24 23.254-7.98 29.101L146.238 242.965a21.195 21.195 0 0 1-10.535 2.797zM333.633 421.762c-3.586 0-7.211-.899-10.54-2.797L125.142 306.113c-10.22-5.824-13.801-18.86-7.977-29.101 5.8-10.239 18.856-13.844 29.098-7.977l197.953 112.852c10.219 5.824 13.8 18.86 7.976 29.101-3.945 6.91-11.156 10.774-18.558 10.774zm0 0"
+                                                                        fill="#000000" opacity="1"
+                                                                        data-original="#000000">
+                                                                    </path>
+                                                                </g>
+                                                            </svg>
+                                                        </button>
+                                                        <div id="share-popup" class="wishlist-popup2"
+                                                            style="display: none;">
+                                                            <div class="container">
+                                                                <div
+                                                                    class="popup-head2 d-flex justify-content-between align-items-center ">
+                                                                    <span class="fw-bold">Share List Via
+                                                                        Email</span>
+                                                                    <button id="close-share-popup"
+                                                                        class="btn close-btn-hover">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            version="1.1"
+                                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                            width="15" height="15" x="0" y="0"
+                                                                            viewBox="0 0 64 64"
+                                                                            style="enable-background:new 0 0 512 512"
+                                                                            xml:space="preserve" class="">
+                                                                            <g>
+                                                                                <path
+                                                                                    d="M4.59 59.41a2 2 0 0 0 2.83 0L32 34.83l24.59 24.58a2 2 0 0 0 2.83-2.83L34.83 32 59.41 7.41a2 2 0 0 0-2.83-2.83L32 29.17 7.41 4.59a2 2 0 0 0-2.82 2.82L29.17 32 4.59 56.59a2 2 0 0 0 0 2.82z"
+                                                                                    fill="#000000" opacity="1"
+                                                                                    data-original="#000000" class="">
+                                                                                </path>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="popup-content ">
+                                                                    <form id="share-form" class="text-justify">
+                                                                        <div class="mb-3">
+                                                                            <label for="sender-name"
+                                                                                class="form-label">Sender
+                                                                                Name</label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="sender-name" required>
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label for="recipient-email"
+                                                                                class="form-label">Recipient's Email
+                                                                                *</label>
+                                                                            <input type="email" class="form-control"
+                                                                                id="recipient-email" required>
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                            <label for="message"
+                                                                                class="form-label">Message</label>
+                                                                            <textarea class="form-control" id="message"
+                                                                                rows="3">Hey there! Check out My Wishlist</textarea>
+                                                                            <p class="mt-2"><span
+                                                                                    class="swym-alert-red">*</span>
+                                                                                -
+                                                                                Required Fields</p>
+                                                                        </div>
+                                                                        <button type="submit"
+                                                                            class="btn btn-dark rounded mt-4">Share
+                                                                            List
+                                                                        </button>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
+                                                                height="24" x="0" y="0" viewBox="0 0 24 24"
+                                                                style="enable-background:new 0 0 512 512"
+                                                                xml:space="preserve" class="">
+                                                                <g>
+                                                                    <path fill="#000000" stroke="#000"
+                                                                        d="M12 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0-12a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                                                                        opacity="1" data-original="#000000"></path>
+                                                                </g>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="col-12 col-sm-6 col-md-4">
+                                                    <div class="product-card position-relative">
+                                                        <a href="product-details.html">
+                                                            <span class="best-seller">BEST SELLER</span>
+                                                            <span class="heart-icon"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                    width="22" height="22" x="0" y="0"
+                                                                    viewBox="0 0 480 480"
+                                                                    style="enable-background:new 0 0 512 512"
+                                                                    xml:space="preserve" class="">
+                                                                    <g>
+                                                                        <path
+                                                                            d="M348 0c-43 .066-83.281 21.04-108 56.223A132.242 132.242 0 0 0 132 0C61.68 0 0 65.426 0 140c0 72.68 41.04 147.535 118.688 216.48a638.51 638.51 0 0 0 117.64 82.625 8.015 8.015 0 0 0 7.344 0 638.546 638.546 0 0 0 117.601-82.625C438.961 287.535 480 212.68 480 140 480 65.426 418.32 0 348 0zM240 422.902C210.617 406.688 16 293.406 16 140 16 73.945 70.2 16 132 16c41.867.074 80.46 22.66 101.031 59.129 1.54 2.351 4.16 3.766 6.969 3.766s5.43-1.415 6.969-3.766C267.539 38.66 306.133 16.074 348 16c61.8 0 116 57.945 116 124 0 153.406-194.617 266.688-224 282.902zm0 0"
+                                                                            fill="#000000" opacity="1"
+                                                                            data-original="#000000" class=""></path>
+                                                                    </g>
+                                                                </svg></span>
+                                                            <div class="img-wrapper">
+                                                                <!-- Default and Hover Image -->
+                                                                <img src="img/sales1.webp" class="default-img"
+                                                                    alt="Product 1" loading="lazy">
+                                                                <img src="img/sales3.webp" class="hover-img"
+                                                                    alt="Product 1 Hover" loading="lazy">
+                                                            </div>
+                                                            <p class="mt-2 product-tilte-name">White Shirt With Floral
+                                                                Embroidery</p>
+                                                            <p>
+                                                                <span class="product-price">Rs. 2,160</span> <del
+                                                                    class="product-price">Rs. 2,700</del><br>
+                                                                <span class="text-danger fw-bold product-discount">(20%
+                                                                    OFF)</span>
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-icon">
+                        <!-- Replace with your cart icon -->
+                        <button class="cart-img">
+                            <svg fill="#000000" width="24" height="24" version="1.1" id="lni_lni-cart"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;"
+                                xml:space="preserve">
+                                <g>
+                                    <path
+                                        d="M40.9,48.2c-3.9,0-7.1,3.3-7.1,7.3c0,4,3.2,7.3,7.1,7.3s7.1-3.3,7.1-7.3C48.1,51.5,44.9,48.2,40.9,48.2z M40.9,59.3
+                                             c-2,0-3.6-1.7-3.6-3.8c0-2.1,1.6-3.8,3.6-3.8s3.6,1.7,3.6,3.8C44.6,57.6,42.9,59.3,40.9,59.3z">
+                                    </path>
+                                    <path
+                                        d="M18.2,48.2c-3.9,0-7.1,3.3-7.1,7.3c0,4,3.2,7.3,7.1,7.3s7.1-3.3,7.1-7.3C25.4,51.5,22.2,48.2,18.2,48.2z M18.2,59.3
+                                             c-2,0-3.6-1.7-3.6-3.8c0-2.1,1.6-3.8,3.6-3.8s3.6,1.7,3.6,3.8C21.9,57.6,20.2,59.3,18.2,59.3z">
+                                    </path>
+                                    <path d="M57.8,1.3h-6.4c-1.5,0-2.8,1.1-3,2.6l-1.8,13.2H7.3c-0.9,0-1.7,0.4-2.2,1.1c-0.5,0.7-0.7,1.6-0.5,2.4c0,0,0,0.1,0,0.1
+                                             l6.1,18.9c0.3,1.2,1.4,2.1,2.8,2.1h29.5c2.2,0,4-1.6,4.3-3.8l4.6-33.2h6c1,0,1.8-0.8,1.8-1.8S58.8,1.3,57.8,1.3z M43.7,37.4
+                                             c-0.1,0.4-0.4,0.8-0.9,0.8h-29L8.1,20.6h37.9L43.7,37.4z"></path>
+                                </g>
+                            </svg>
+                        </button>
+                        <span class="cart-count">1</span>
+                        <div class="cart-dropdown">
+                            <div class="cart-header">
+                                <h4>Shopping Cart</h4>
+                                <button class="close-btn">&times;</button>
+                            </div>
+                            <div class="cart-item pt-2">
+                                <img src="img/category4.webp" alt="Product Image" class="product-img" loading="lazy">
+                                <div class="item-details">
+                                    <p class="text-start">Drea Flap Tweed Top & Pants</p>
+                                    <p class="text-start price mt-1">Rs. 14,249</p>
+                                </div>
+                                <button class="remove-btn">&times;</button>
+                            </div>
+                            <div class="cart-item pt-2">
+                                <img src="img/category4.webp" alt="Product Image" class="product-img" loading="lazy">
+                                <div class="item-details">
+                                    <p class="text-start">Drea Flap Tweed Top & Pants</p>
+                                    <p class="text-start price mt-1">Rs. 14,249</p>
+                                </div>
+                                <button class="remove-btn">&times;</button>
+                            </div>
+                            <div class="cart-footer pt-5">
+                                <p class="subtotal mb-0 align-items-center">
+                                    Subtotal: <span class="">Rs. 14,249</span>
+                                </p>
+                            </div>
+                            <a href="your-cart.html" class="btn checkout-btn mt-2">BEGIN CHECKOUT</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navbar Content -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <!-- Navigation Links -->
+                    <ul class="navbar-nav mx-auto mt-3 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="product.html">New Arrivals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="product.html">Best Sellers</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-hover">
+                            <a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuLink">
+                                <li><a href="product.html" class="dropdown-item">Shirts</a></li>
+                                <li><a href="product.html" class="dropdown-item">Tops</a></li>
+                                <li><a href="product.html" class="dropdown-item">T-Shirts</a></li>
+                                <li><a href="product.html" class="dropdown-item">Dresses</a></li>
+                                <li><a href="product.html" class="dropdown-item">Coordinates</a></li>
+                                <li><a href="product.html" class="dropdown-item">Belts</a></li>
+                                <li><a href="product.html" class="dropdown-item">Sarees</a></li>
+                                <li><a href="product.html" class="dropdown-item">Gowns</a></li>
+                                <li><a href="product.html" class="dropdown-item">Skirts</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="product.html">INFLUENCERS IN LADY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="product.html">CELEBRITIES IN LADY
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-hover">
+                            <a class="nav-link" href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Collections
+                            </a>
+                            <ul class="dropdown-menu mt-1" aria-labelledby="dropdownMenuLink1">
+                                <li>
+                                    <a href="product.html" class="dropdown-item d-flex justify-content-between">
+                                        <span class="site-nav__label">In The Blue</span>
+                                        <span class=" text-danger  fw-bold"> NEW </span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="dropdown-item">
+                                        <span class="site-nav__label">Chéri Collection</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="dropdown-item">
+                                        <span class="site-nav__label">ENCHANTÉ</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="dropdown-item">
+                                        <span class="site-nav__label">BOHO BELLE</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="dropdown-item">
+                                        <span class="site-nav__label">SUMMER SPELL</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="dropdown-item">
+                                        <span class="site-nav__label">AFTER PARTY EDIT</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="dropdown-item">
+                                        <span class="site-nav__label">SWISH SOIRÉE</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="dropdown-item">
+                                        <span class="site-nav__label">DAYDREAM</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="dropdown-item">
+                                        <span class="site-nav__label">LULU LOUNGE</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="dropdown-item">
+                                        <span class="site-nav__label">LOVE BOND</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="dropdown-item">
+                                        <span class="site-nav__label">Bloom</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="dropdown-item">
+                                        <span class="site-nav__label">Summer 2022</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="dropdown-item">
+                                        <span class="site-nav__label">Swish Summer Days</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="dropdown-item">
+                                        <span class="site-nav__label">Mohabbatein</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="dropdown-item">
+                                        <span class="site-nav__label">Christmas Collection 2021</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="dropdown-item">
+                                        <span class="site-nav__label">Tie &amp; Dye</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="dropdown-item">
+                                        <span class="site-nav__label">The Bloom Edit</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="dropdown-item">
+                                        <span class="site-nav__label">Floral Blast</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="dropdown-item">
+                                        <span class="site-nav__label">High Tea Party</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="product.html" class="dropdown-item">
+                                        <span class="site-nav__label">House Party Alert</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="product.html">LADY LUXE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="product.html">Swish By Dolcy And Simran</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="product.html">Returns</a>
+                        </li>
+                        <li class="nav-item text-uppercase">
+                            <a class="nav-link" href="product.html">SALE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End  -->
+    <!-- product headding and link -->
+    <div class="container pt-4 pb-3">
+        <div>
+            <a href="" class="text-black">Home</a> |
+            <a href="" class="text-black">Teal Organza Bow Rose Embellished Shirt</a>
+        </div>
+    </div>
+    <!-- product headding and link end -->
+    <!-- product-details section -->
+    <section>
+        <div class="container pb-3">
+            <div class="row">
+                <!-- Main Product Image -->
+                <div class="col-lg-6 order-lg-2 order-1">
+                    <img id="mainImage" src="img/arrivals.webp" class="img-fluid border w-100" alt="Main Product Image">
+                    <div class="d-flex flex-row mb-3">
+                        <img src="img/arrivals2.webp" class="img-thumbnail mb-2 h-w-25" alt="Thumbnail 1"
+                            onclick="changeMainImage(this)">
+                        <img src="img/arrivals3.webp" class="img-thumbnail mb-2 h-w-25" alt="Thumbnail 2"
+                            onclick="changeMainImage(this)">
+                        <img src="img/arrivals4.webp" class="img-thumbnail mb-2 h-w-25" alt="Thumbnail 3"
+                            onclick="changeMainImage(this)">
+                        <img src="img/arrivals.webp" class="img-thumbnail h-w-25" alt="Thumbnail 4"
+                            onclick="changeMainImage(this)">
+                    </div>
+                </div>
+
+                <!-- Product Details -->
+                <div class="col-lg-6 order-lg-3 order-3 product-details">
+                    <h4 class="fw-bold">Teal Organza Bow Rose Embellished Shirt</h4>
+                    <p class="fw-bold fs-4 mb-1">
+                        <span>Rs. 2,799</span> <del>Rs. 3,999</del>
+                        <span class="sale fw-bold text-uppercase">Sale</span>
+                    </p>
+                    <p class="fs-12">Tax included.</p>
+                    <div class="d-flex justify-content-between">
+                        <p class="mt-3 text-uppercase fs-12">Size</p>
+                        <!-- trigger modal -->
+                        <a href="" class="mt-3 text-uppercase fs-12" data-bs-toggle="modal" data-bs-target="#exampleModal">Size Guide</a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body size-chart">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                        <div>
+                                            <img src="img/new_desk_size_chart.webp" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <button class="btn btn-outline-dark size-btn btn-md">XS</button>
+                        <button class="btn btn-outline-dark size-btn btn-md">S</button>
+                        <button class="btn btn-outline-dark size-btn btn-md">M</button>
+                        <button class="btn btn-outline-dark size-btn btn-md">L</button>
+                        <button class="btn btn-outline-dark size-btn btn-md">XL</button>
+                        <button class="btn btn-outline-dark size-btn btn-md">XXL</button>
+                    </div>
+                    <p class="fs-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="15" height="15" x="0" y="0" viewBox="0 0 682.667 682.667"
+                            style="enable-background: new 0 0 512 512" xml:space="preserve" class="">
+                            <g>
+                                <defs>
+                                    <clipPath id="a" clipPathUnits="userSpaceOnUse">
+                                        <path d="M0 512h512V0H0Z" fill="#000000" opacity="1" data-original="#000000">
+                                        </path>
+                                    </clipPath>
+                                </defs>
+                                <g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 682.667)">
+                                    <path
+                                        d="M0 0c0-132.548-108.451-241-241-241S-482-132.548-482 0s108.451 241 241 241S0 132.548 0 0Z"
+                                        style="
+                        stroke-width: 30;
+                        stroke-linecap: butt;
+                        stroke-linejoin: miter;
+                        stroke-miterlimit: 10;
+                        stroke-dasharray: none;
+                        stroke-opacity: 1;
+                      " transform="translate(497 256)" fill="none" stroke="#000000" stroke-width="30"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="">
+                                    </path>
+                                    <path d="M0 0v482" style="
+                        stroke-width: 30;
+                        stroke-linecap: butt;
+                        stroke-linejoin: miter;
+                        stroke-miterlimit: 10;
+                        stroke-dasharray: none;
+                        stroke-opacity: 1;
+                      " transform="translate(256 15)" fill="none" stroke="#000000" stroke-width="30"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="">
+                                    </path>
+                                    <path
+                                        d="M0 0c0-132.548-53.726-241-120-241S-240-132.548-240 0s53.726 241 120 241S0 132.548 0 0Z"
+                                        style="
+                        stroke-width: 30;
+                        stroke-linecap: butt;
+                        stroke-linejoin: miter;
+                        stroke-miterlimit: 10;
+                        stroke-dasharray: none;
+                        stroke-opacity: 1;
+                      " transform="translate(376 256)" fill="none" stroke="#000000" stroke-width="30"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="">
+                                    </path>
+                                    <path d="M0 0h-482" style="
+                        stroke-width: 30;
+                        stroke-linecap: butt;
+                        stroke-linejoin: miter;
+                        stroke-miterlimit: 10;
+                        stroke-dasharray: none;
+                        stroke-opacity: 1;
+                      " transform="translate(497 256)" fill="none" stroke="#000000" stroke-width="30"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="">
+                                    </path>
+                                    <path d="M0 0h-396.92" style="
+                        stroke-width: 30;
+                        stroke-linecap: butt;
+                        stroke-linejoin: miter;
+                        stroke-miterlimit: 10;
+                        stroke-dasharray: none;
+                        stroke-opacity: 1;
+                      " transform="translate(454.46 391)" fill="none" stroke="#000000" stroke-width="30"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="">
+                                    </path>
+                                    <path d="M0 0h-396.92" style="
+                        stroke-width: 30;
+                        stroke-linecap: butt;
+                        stroke-linejoin: miter;
+                        stroke-miterlimit: 10;
+                        stroke-dasharray: none;
+                        stroke-opacity: 1;
+                      " transform="translate(454.46 121)" fill="none" stroke="#000000" stroke-width="30"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg> Worldwide Shipping
+                    </p>
+                    <p class="fs-12">Quantity</p>
+                    <div class="pb-3">
+                        <a href="" class="pr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                viewBox="0 0 20 20" style="enable-background: new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path fill="#000000" fill-rule="evenodd"
+                                        d="M5 10a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1z" clip-rule="evenodd"
+                                        opacity="1" data-original="#000000"></path>
+                                </g>
+                            </svg>
+                        </a>
+                        <span class="count pr-2">1</span>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                viewBox="0 0 24 24" style="enable-background: new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M12 6a1 1 0 0 0-1 1v4H7a1 1 0 0 0 0 2h4v4a1 1 0 0 0 2 0v-4h4a1 1 0 0 0 0-2h-4V7a1 1 0 0 0-1-1z"
+                                        fill="#000000" opacity="1" data-original="#000000"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="your-cart.html" class="btn btn-dark btn-lg mb-3 w-100 text-uppercase">
+                            Add to Cart
+                        </a>
+                        <a href="checkouts.html " class="btn btn-dark btn-lg mb-3 w-100 text-uppercase">Buy It Now</a>
+                    </div>
+                    <p class="fs-12  text-danger  fw-bold">
+                        No exchange & No returns on sale products
+                    </p>
+                    <button class="btn btn-dark btn-md mb-3 text-uppercase fs-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="16" height="16" x="0" y="0" viewBox="0 0 512.001 512"
+                            style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                            <g>
+                                <path
+                                    d="M256 455.516c-7.29 0-14.316-2.641-19.793-7.438-20.684-18.086-40.625-35.082-58.219-50.074l-.09-.078c-51.582-43.957-96.125-81.918-127.117-119.313C16.137 236.81 0 197.172 0 153.871c0-42.07 14.426-80.883 40.617-109.293C67.121 15.832 103.488 0 143.031 0c29.555 0 56.621 9.344 80.446 27.77C235.5 37.07 246.398 48.453 256 61.73c9.605-13.277 20.5-24.66 32.527-33.96C312.352 9.344 339.418 0 368.973 0c39.539 0 75.91 15.832 102.414 44.578C497.578 72.988 512 111.801 512 153.871c0 43.3-16.133 82.938-50.777 124.738-30.993 37.399-75.532 75.356-127.106 119.309-17.625 15.016-37.597 32.039-58.328 50.168a30.046 30.046 0 0 1-19.789 7.43zM143.031 29.992c-31.066 0-59.605 12.399-80.367 34.914-21.07 22.856-32.676 54.45-32.676 88.965 0 36.418 13.535 68.988 43.883 105.606 29.332 35.394 72.961 72.574 123.477 115.625l.093.078c17.66 15.05 37.68 32.113 58.516 50.332 20.961-18.254 41.012-35.344 58.707-50.418 50.512-43.051 94.137-80.223 123.469-115.617 30.344-36.618 43.879-69.188 43.879-105.606 0-34.516-11.606-66.11-32.676-88.965-20.758-22.515-49.3-34.914-80.363-34.914-22.758 0-43.653 7.235-62.102 21.5-16.441 12.719-27.894 28.797-34.61 40.047-3.452 5.785-9.53 9.238-16.261 9.238s-12.809-3.453-16.262-9.238c-6.71-11.25-18.164-27.328-34.61-40.047-18.448-14.265-39.343-21.5-62.097-21.5zm0 0"
+                                    fill="#ffffff" opacity="1" data-original="#000000" class="mr-5"></path>
+                            </g>
+                        </svg>
+                        <span>Added To Wishlist</span>
+                    </button>
+                    <h6>Product Details</h6>
+                    <ul>
+                        <li class="mb-3">SKU : TOP00575-XS</li>
+                        <li class="mb-3">DRY CLEAN ONLY</li>
+                        <li class="mb-2">You will receive a teal organza shirt</li>
+                        <li class="mb-2">
+                            It has beautiful rose embellishment on the bow straps
+                        </li>
+                        <li class="mb-2">Tie up bow neck</li>
+                        <li class="mb-2">Double placket</li>
+                        <li class="mb-2">Full Sleeves</li>
+                        <li class="mb-2">Balloon sleeve</li>
+                        <li class="mb-2">Front open button down shirt</li>
+                        <li class="mb-2">Tailored fit</li>
+                    </ul>
+                    <p>Material: Organza Shantoon</p>
+                    <p>Length: Shirt - 26 inches</p>
+                    <p>Pack contains: 1 Shirt Paper 1 Inner</p>
+                    <p>Shipping & Exchange</p>
+                    <ul>
+                        <li class="mb-2">
+                            Delivery time within India - 10-15 business days.
+                        </li>
+                        <li class="mb-2">
+                            International delivery time - 10-15 business days.
+                        </li>
+                        <li class="mb-2">Prepaid orders are auto-confirmed.</li>
+                        <li class="mb-2">
+                            Exchange: If you are not completely satisfied with your purchase, simply select the option
+                            of exchange within 2 days of receiving your order from your order details page and we will
+                            process your Exchange, no questions asked.
+                        </li>
+                        <li class="mb-2">
+                            Sale products are non-returnable and exchangeable.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product-details section end -->
+    <!-- add product section -->
+    <section>
+        <div class="container">
+            <h4 class="mb-4 fw-bold">Frequently Bought Together</h4>
+            <div class="row align-items-center text-center text-md-start frequently-content">
+                <!-- Product 1 -->
+                <div class="col-4 col-md-2 mb-3 mb-md-0">
+                    <img src="img/dresses.webp" alt="Product 1" class="img-fluid">
+                </div>
+                <!-- Plus Sign -->
+                <div class="col-2 col-md-1 mb-3 mb-md-0">
+                    <h2 class="m-0">+</h2>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-4 col-md-2 mb-3 mb-md-0">
+                    <img src="img/dresses2.webp" alt="Product 2" class="img-fluid">
+                </div>
+                <!-- Total Price -->
+                <div class="col-12 col-md-4 mt-3 mt-md-0">
+                    <p class="fs-12 mb-2">
+                        Total Price: <span class="fw-bold text-danger">Rs. 12,499</span> <del>Rs. 23,999</del>
+                    </p>
+                    <a href="your-cart.html" class="btn btn-dark btn-md w-md-auto text-uppercase">Add Selected To
+                        Cart</a>
+                </div>
+            </div>
+            <!-- Product 1 Details -->
+            <div class="d-flex flex-wrap align-items-center frequently-content-text mt-3">
+                <input type="checkbox" id="product1" class="form-check-input me-2" checked>
+                <label for="product1" class="form-check-label fw-bold me-2">
+                    Teal Organza Bow Rose Embellished Shirt
+                </label>
+                <select class="form-select form-select-sm w-auto me-2">
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                </select>
+                <span class="fw-bold">Rs. 3,699</span>
+            </div>
+            <!-- Product 2 Details -->
+            <div class="d-flex flex-wrap align-items-center frequently-content-text mt-3">
+                <input type="checkbox" id="product2" class="form-check-input me-2" checked>
+                <label for="product2" class="form-check-label fw-bold me-2 ">
+                    Nikita Vasdey In Red Flared Gown
+                </label>
+                <select class="form-select form-select-sm w-auto me-2">
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                </select>
+                <span class="fw-bold">Rs. 8,800</span>
+            </div>
+        </div>
+    </section>
+    <!-- add product section -->
+    <div class="horizontal-line"></div>
+    <!-- Similar Products section start -->
+    <div class="container">
+        <div class="section-title pt-5">Similar Products</div>
+        <!-- Product Grid -->
+        <div class="row g-4 pt-4">
+            <!-- Product Card 1 -->
+            <div class=" col-6 col-sm-6 col-md-3">
+                <div class="product-card position-relative">
+                    <span class="best-seller">BEST SELLER</span>
+                    <div class="img-wrapper">
+                        <!-- Default and Hover Image -->
+                        <img src="img/sales1.webp" class="default-img" alt="Product 1">
+                        <img src="img/sales3.webp" class="hover-img" alt="Product 1 Hover">
+                    </div>
+                    <p class="mt-2 product-tilte-name">White Shirt With Floral Embroidery</p>
+                    <p>
+                        <span class="product-price">Rs. 2,160</span> <del class="product-price">Rs. 2,700</del><br>
+                        <span class="text-danger fw-bold product-discount">(20% OFF)</span>
+                    </p>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class=" col-6 col-sm-6 col-md-3">
+                <div class="product-card position-relative">
+                    <span class="best-seller">BEST SELLER</span>
+                    <div class="img-wrapper">
+                        <!-- Default and Hover Image -->
+                        <img src="img/sales1.webp" class="default-img" alt="Product 1">
+                        <img src="img/sales3.webp" class="hover-img" alt="Product 1 Hover">
+                    </div>
+                    <p class="mt-2 product-tilte-name">White Shirt With Floral Embroidery</p>
+                    <p>
+                        <span class="product-price">Rs. 2,160</span> <del class="product-price">Rs. 2,700</del><br>
+                        <span class="text-danger fw-bold product-discount">(20% OFF)</span>
+                    </p>
+                </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class=" col-6 col-sm-6 col-md-3">
+                <div class="product-card position-relative">
+                    <span class="best-seller">BEST SELLER</span>
+                    <div class="img-wrapper">
+                        <!-- Default and Hover Image -->
+                        <img src="img/sales1.webp" class="default-img" alt="Product 1">
+                        <img src="img/sales3.webp" class="hover-img" alt="Product 1 Hover">
+                    </div>
+                    <p class="mt-2 product-tilte-name">White Shirt With Floral Embroidery</p>
+                    <p>
+                        <span class="product-price">Rs. 2,160</span> <del class="product-price">Rs. 2,700</del><br>
+                        <span class="text-danger fw-bold product-discount">(20% OFF)</span>
+                    </p>
+                </div>
+            </div>
+            <!-- Product Card 4 -->
+            <div class=" col-6 col-sm-6 col-md-3">
+                <div class="product-card position-relative">
+                    <span class="best-seller">BEST SELLER</span>
+                    <div class="img-wrapper">
+                        <!-- Default and Hover Image -->
+                        <img src="img/sales1.webp" class="default-img" alt="Product 1">
+                        <img src="img/sales3.webp" class="hover-img" alt="Product 1 Hover">
+                    </div>
+                    <p class="mt-2 product-tilte-name">White Shirt With Floral Embroidery</p>
+                    <p>
+                        <span class="product-price">Rs. 2,160</span> <del class="product-price">Rs. 2,700</del><br>
+                        <span class="text-danger fw-bold product-discount">(20% OFF)</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Similar Products section end -->
+    <!-- Recently Viewed Products -->
+    <div class="container">
+        <div class="section-title  pt-3">Recently Viewed Products</div>
+        <!-- Product Grid -->
+        <div class="row g-4 pt-4">
+            <!-- Product Card 1 -->
+            <div class=" col-6 col-sm-6 col-md-3">
+                <div class="product-card position-relative">
+                    <span class="best-seller">BEST SELLER</span>
+                    <div class="img-wrapper">
+                        <!-- Default and Hover Image -->
+                        <img src="img/sales1.webp" class="default-img" alt="Product 1">
+                        <img src="img/sales3.webp" class="hover-img" alt="Product 1 Hover">
+                    </div>
+                    <p class="mt-2 product-tilte-name">White Shirt With Floral Embroidery</p>
+                    <p>
+                        <span class="product-price">Rs. 2,160</span> <del class="product-price">Rs. 2,700</del><br>
+                        <span class="text-danger fw-bold product-discount">(20% OFF)</span>
+                    </p>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class=" col-6 col-sm-6 col-md-3">
+                <div class="product-card position-relative">
+                    <span class="best-seller">BEST SELLER</span>
+                    <div class="img-wrapper">
+                        <!-- Default and Hover Image -->
+                        <img src="img/sales1.webp" class="default-img" alt="Product 1">
+                        <img src="img/sales3.webp" class="hover-img" alt="Product 1 Hover">
+                    </div>
+                    <p class="mt-2 product-tilte-name">White Shirt With Floral Embroidery</p>
+                    <p>
+                        <span class="product-price">Rs. 2,160</span> <del class="product-price">Rs. 2,700</del><br>
+                        <span class="text-danger fw-bold product-discount">(20% OFF)</span>
+                    </p>
+                </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class=" col-6 col-sm-6 col-md-3">
+                <div class="product-card position-relative">
+                    <span class="best-seller">BEST SELLER</span>
+                    <div class="img-wrapper">
+                        <!-- Default and Hover Image -->
+                        <img src="img/sales1.webp" class="default-img" alt="Product 1">
+                        <img src="img/sales3.webp" class="hover-img" alt="Product 1 Hover">
+                    </div>
+                    <p class="mt-2 product-tilte-name">White Shirt With Floral Embroidery</p>
+                    <p>
+                        <span class="product-price">Rs. 2,160</span> <del class="product-price">Rs. 2,700</del><br>
+                        <span class="text-danger fw-bold product-discount">(20% OFF)</span>
+                    </p>
+                </div>
+            </div>
+            <!-- Product Card 4 -->
+            <div class=" col-6 col-sm-6 col-md-3">
+                <div class="product-card position-relative">
+                    <span class="best-seller">BEST SELLER</span>
+                    <div class="img-wrapper">
+                        <!-- Default and Hover Image -->
+                        <img src="img/sales1.webp" class="default-img" alt="Product 1">
+                        <img src="img/sales3.webp" class="hover-img" alt="Product 1 Hover">
+                    </div>
+                    <p class="mt-2 product-tilte-name">White Shirt With Floral Embroidery</p>
+                    <p>
+                        <span class="product-price">Rs. 2,160</span> <del class="product-price">Rs. 2,700</del><br>
+                        <span class="text-danger fw-bold product-discount">(20% OFF)</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Recently Viewed Products end  -->
+    <!-- footer start -->
+    <div class="horizontal-line"></div>
+    <footer>
+        <div class="container-fluid">
+            <!-- Top Section -->
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="col-lg-6 col-md-5">
+                    <div class="row">
+                        <!-- Column 1 -->
+                        <div class="col-6 col-md-4 mb-3">
+                            <h6 class="footer-title">The Company</h6>
+                            <div class="footer-links">
+                                <a href="about.html">About Us</a>
+                                <a href="contact-us.html">Contact Us</a>
+                            </div>
+                        </div>
+                        <!-- Column 2 -->
+                        <div class="col-6 col-md-8 mb-3">
+                            <h6 class="footer-title">Quick Links</h6>
+                            <div class="footer-links d-flex flex-wrap">
+                                <div class="me-4">
+                                    <a href="shipping-policy.html">Shipping Policy</a>
+                                    <a href="returns-policy.html">Returns & Exchange Policy</a>
+                                </div>
+                                <div>
+                                    <a href="terms-conditions.html">Terms & Conditions</a>
+                                    <a href="cancellation-policy.html">Cancellations</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Address -->
+                    <div class="address">
+                        <h6 class="fw-bold">In case of any concern, contact us</h6>
+                        <p>
+                            11A Silver Springs Business Park Near Silver Springs Phase 2 Bypass Road Indore (M.P.)
+                            452001
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-6 col-lg-3 col-md-4 border-custom text-center">
+                    <h6 class="footer-title">Keep in Touch</h6>
+                    <div class="social-icons g-1">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" x="0" y="0"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M420 36H92a56 56 0 0 0-56 56v328a56 56 0 0 0 56 56h160.67V292.924h-36.615v-73.23h36.312V186.6c0-29.952 14.268-76.746 77.059-76.746l56.565.227v62.741h-41.078c-6.679 0-16.183 3.326-16.183 17.592v29.285h58.195l-6.68 73.23H325.9V476H420a56 56 0 0 0 56-56V92a56 56 0 0 0-56-56z"
+                                        fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                viewBox="0 0 1000 1000" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path fill="#000000" d="M0 0h1000v1000H0z" opacity="1" data-original="#000000"
+                                        class=""></path>
+                                    <path fill="#ffffff"
+                                        d="M384 754c235.9 0 364.9-195.4 364.9-364.9 0-5.5 0-11.1-.4-16.6 25.1-18.2 46.8-40.6 64-66.4a254.51 254.51 0 0 1-73.7 20.2c26.8-16 46.8-41.2 56.4-70.9-25.2 14.9-52.7 25.5-81.4 31.1-48.5-51.7-129.8-54.2-181.4-5.6-33.3 31.3-47.5 78.1-37.1 122.6-103.1-5.2-199.2-53.9-264.3-134-34 58.6-16.7 133.5 39.7 171.2-20.4-.6-40.4-6.1-58.2-16v1.6c0 61.1 43 113.6 102.9 125.7-18.9 5.2-38.7 5.9-57.9 2.2 16.8 52.2 64.9 88 119.8 89.1-53.7 42.2-122 61.3-189.8 53.1C246.1 734 314.4 754 384 753.9"
+                                        opacity="1" data-original="#000000" class=""></path>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                viewBox="0 0 176 176" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M152 0H24A24 24 0 0 0 0 24v128a24 24 0 0 0 24 24h128a24 24 0 0 0 24-24V24a24 24 0 0 0-24-24zM96.49 112.5c-6.83 0-13.24-3.69-15.44-7.88 0 0-3.67 14.56-4.44 17.37-2.74 9.92-10.78 19.86-11.41 20.67a.84.84 0 0 1-1.5-.36c-.17-1.26-2.22-13.79.19-24L72 83.86a24.24 24.24 0 0 1-2-10c0-9.36 5.43-16.35 12.19-16.35 5.74 0 8.52 4.31 8.52 9.49 0 5.77-3.68 14.41-5.58 22.42-1.59 6.7 3.36 12.17 10 12.17 12 0 20-15.38 20-33.6 0-13.84-9.32-24.21-26.29-24.21-19.16 0-31.11 14.29-31.11 30.22 0 5.51 1.63 9.39 4.17 12.39 1.17 1.38 1.34 1.94.91 3.52-.3 1.17-1 4-1.29 5.07a2.16 2.16 0 0 1-3.16 1.58C49.53 93 45.42 83.33 45.42 72.47 45.42 54.52 60.56 33 90.58 33c24.12 0 40 17.45 40 36.19 0 24.81-13.78 43.31-34.09 43.31z"
+                                        data-name="Layer 2" fill="#000000" opacity="1" data-original="#000000" class="">
+                                    </path>
+                                </g>
+                            </svg></a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0"
+                                        fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                    <path
+                                        d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0"
+                                        fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                    <path
+                                        d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0"
+                                        fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" x="0" y="0"
+                                viewBox="0 0 504 504" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path d="M219.6 202.4v92l84.8-45.6z" fill="#000000" opacity="1"
+                                        data-original="#000000" class=""></path>
+                                    <path
+                                        d="M377.6 0H126C56.8 0 0 56.8 0 126.4V378c0 69.2 56.8 126 126 126h251.6c69.6 0 126.4-56.8 126.4-126.4V126.4C504 56.8 447.2 0 377.6 0zM408 264.4c0 26.4-2.4 53.2-2.4 53.2s-2.8 22.4-12 32.4c-12 13.2-25.2 13.2-31.2 14-44 3.2-110 3.6-110 3.6s-82-1.2-107.2-3.6c-6.8-1.2-22.8-.8-34.8-14-9.6-10-12-32.4-12-32.4S96 290.8 96 264.4v-24.8c0-26.4 2.4-53.2 2.4-53.2s2.8-22.4 12-32.4c12-13.2 25.2-13.6 31.2-14.4C186 136.4 252 136 252 136s66 .4 110 3.6c6 .8 19.6 1.2 31.6 14 9.6 10 12 32.8 12 32.8s2.4 26.8 2.4 53.2v24.8z"
+                                        fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <hr>
+                    <h6 class="footer-title">Payment Method</h6>
+                    <div class="payment-icons">
+                        <img src="img/payment-method.webp" class="img-fluid" alt="PayPal" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-6 col-lg-3 col-md-3 border-custom">
+                    <ul class="features list-unstyled">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" x="0" y="0"
+                                viewBox="0 0 49.94 49.94" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M48.856 22.73a3.56 3.56 0 0 0 .906-3.671 3.56 3.56 0 0 0-2.892-2.438l-12.092-1.757a1.58 1.58 0 0 1-1.19-.865L28.182 3.043a3.56 3.56 0 0 0-3.212-1.996 3.56 3.56 0 0 0-3.211 1.996L16.352 14c-.23.467-.676.79-1.191.865L3.069 16.622A3.56 3.56 0 0 0 .177 19.06a3.56 3.56 0 0 0 .906 3.671l8.749 8.528c.373.364.544.888.456 1.4L8.224 44.701a3.506 3.506 0 0 0 .781 2.904c1.066 1.267 2.927 1.653 4.415.871l10.814-5.686a1.619 1.619 0 0 1 1.472 0l10.815 5.686a3.544 3.544 0 0 0 1.666.417c1.057 0 2.059-.47 2.748-1.288a3.505 3.505 0 0 0 .781-2.904l-2.065-12.042a1.582 1.582 0 0 1 .456-1.4l8.749-8.529z"
+                                        fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                </g>
+                            </svg>
+                            <span>Premium Quality</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" x="0" y="0"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M256 42.667c-50.261 0-96.491 17.753-133.054 47.084-4.595 3.686-10.478 2.703-13.345-2.444l-8.434-15.14C91.404 54.611 64.993 59.052 61.5 78.833L38.875 207.042a21.298 21.298 0 0 0 5.417 18.25 21.328 21.328 0 0 0 19.292 6.458l128.25-22.625c19.782-3.493 24.223-29.904 6.667-39.667l-13.633-7.571c-5.15-2.86-5.642-8.234-.785-11.565C204.504 136.311 229.127 128 256 128c50.783 0 94.08 29.226 114.917 71.542 10.399 21.151 35.977 29.863 57.125 19.458 21.135-10.414 29.827-35.988 19.417-57.125C412.655 91.198 339.678 42.667 256 42.667zM256 469.333c50.261 0 96.491-17.753 133.054-47.084 4.595-3.686 10.478-2.703 13.345 2.444l8.434 15.14c9.762 17.556 36.174 13.115 39.667-6.667l22.625-128.208a21.298 21.298 0 0 0-5.417-18.25 21.328 21.328 0 0 0-19.292-6.458l-128.25 22.625c-19.782 3.493-24.223 29.904-6.667 39.667l13.633 7.571c5.15 2.86 5.642 8.234.785 11.565C307.496 375.689 282.873 384 256 384c-50.783 0-94.08-29.226-114.917-71.542-10.399-21.151-35.977-29.863-57.125-19.458-21.135 10.414-29.827 35.988-19.417 57.125C99.345 420.802 172.322 469.333 256 469.333z"
+                                        fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                                </g>
+                            </svg>
+                            <span>3 Days Return and Exchange</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" x="0" y="0"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path
+                                        d="M388.5 103h-60.1c8.7 13.9 14.3 29.6 16.9 47h59.2l-16.3 62.4h-43.5c-4.5 27.4-15 49.8-31.5 67.2s-39.9 30.7-70.3 39.9L363 466.8v4.4H251.9l-135.8-162-.3-57.1h69.8c28.2-.6 46.5-13.8 54.7-39.6H107.2l16.3-62.4H238c-8.7-18.7-25.6-28.5-50.9-29.3h-79.6l18.9-80.2h278.4z"
+                                        fill="#000000" opacity="1" data-original="#000000"></path>
+                                </g>
+                            </svg>
+                            <span>Cash on Delivery</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" x="0" y="0"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                class="">
+                                <g>
+                                    <path fill-rule="evenodd"
+                                        d="M365 3.016c44.39 10.3 61.371 36.257 82.66 71.984H365zM105.578 78c8.692 0 15 4.195 15 14 0 8.27-6.691 14.977-14.957 15H15c-8.285 0-15 6.719-15 15 0 8.285 6.715 15 15 15h135c8.363 0 15.059 6.71 15.059 15 0 8.285-6.715 15-15 15H15c-8.285 0-15 6.715-15 15s6.715 15 15 15h33v45c0 8.285 6.715 15 15 15h30.152c5.375 26.477 28.77 46 56.348 46s50.973-19.523 56.348-46h152.304c5.375 26.477 28.77 46 56.348 46s50.973-19.523 56.348-46H497c8.285 0 15-6.715 15-15v-90c0-44.012-46.422-46.934-46.465-47H350c-8.285 0-15-6.715-15-15V0H63c-8.285 0-15 6.715-15 15v33H30c-8.285 0-15 6.715-15 15s6.715 15 15 15zm328.367 148.055c10.739 10.738 10.739 28.156 0 38.894C416.672 282.223 387 269.934 387 245.5c0-24.43 29.672-36.719 46.945-19.445zm-265 0c10.739 10.738 10.739 28.156 0 38.894C151.672 282.223 122 269.934 122 245.5c0-24.43 29.672-36.719 46.945-19.445zm0 0"
+                                        fill="#000000" opacity="1" data-original="#000000"></path>
+                                </g>
+                            </svg>
+                            <span>Free Shipping</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Bottom Section -->
+            <div class="text-center">
+                <p class="copyright mt-2">© 2024 LADY. Designed by Star Web India.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-end -->
+    <!-- chatbox button -->
+    <div class="chat-container">
+        <!-- Chat Button -->
+        <button id="chatButton" class="chat-button">
+            <svg id="chatIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4 9.78374C4 5.84433 4.81543 5 8.62 5H11.38C15.1846 5 16 5.84433 16 9.78374C16 13.7232 15.1846 14.9008 11.38 14.9008H10.8303C10.8025 14.9346 10.7703 14.9666 10.7336 14.9962L8.54286 16.86C8.12929 17.1935 7.5137 16.898 7.5137 16.3667V14.87C4.65254 14.6884 4 13.3078 4 9.78374ZM10 10.6667C10.3682 10.6667 10.6667 10.3682 10.6667 10C10.6667 9.63181 10.3682 9.33333 10 9.33333C9.63181 9.33333 9.33333 9.63181 9.33333 10C9.33333 10.3682 9.63181 10.6667 10 10.6667ZM13.3333 10C13.3333 10.3682 13.0349 10.6667 12.6667 10.6667C12.2985 10.6667 12 10.3682 12 10C12 9.63181 12.2985 9.33333 12.6667 9.33333C13.0349 9.33333 13.3333 9.63181 13.3333 10ZM7.33333 10.6667C7.70152 10.6667 8 10.3682 8 10C8 9.63181 7.70152 9.33333 7.33333 9.33333C6.96514 9.33333 6.66667 9.63181 6.66667 10C6.66667 10.3682 6.96514 10.6667 7.33333 10.6667Z">
+                </path>
+            </svg>
+            <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                style="display: none">
+                <path d="M6 6L18 18M6 18L18 6" stroke="white" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </button>
+
+        <!-- Chat Popup -->
+        <div id="chatPopup" class="chat-popup">
+            <div class="chat-header">
+                <h4>Chat with us</h4>
+                <p>👋 Hi, message us with any questions. We're happy to help!</p>
+            </div>
+            <div class="chat-body">
+                <textarea placeholder="Write message" class="chat-input"></textarea>
+                <button class="send-button">&#x27A4;</button>
+            </div>
+            <div class="chat-footer">
+                <p class="instant-answers text-center">Instant answers</p>
+                <button class="track-order-btn">Track my order</button>
+            </div>
+        </div>
+    </div>
+    <!-- chatbox button end  -->
+    <!-- WhatsApp Chat Button -->
+    <div class="chat-container2">
+        <button id="whatsappButton" class="chat-button2">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512"
+                height="512" x="0" y="0" viewBox="0 0 682 682.667" style="enable-background: new 0 0 512 512"
+                xml:space="preserve" class="">
+                <g>
+                    <path fill-rule="evenodd"
+                        d="M544.387 93.008C484.512 33.063 404.883.035 320.05 0 145.246 0 2.98 142.262 2.91 317.113c-.024 55.895 14.577 110.457 42.331 158.551L.25 640l168.121-44.102c46.324 25.27 98.477 38.586 151.55 38.602h.134c174.785 0 317.066-142.273 317.132-317.133.036-84.742-32.921-164.418-92.8-224.36zM320.05 580.94h-.11c-47.296-.02-93.683-12.73-134.16-36.742l-9.62-5.715-99.766 26.172 26.628-97.27-6.27-9.972c-26.386-41.969-40.32-90.476-40.296-140.281.055-145.332 118.305-263.57 263.7-263.57 70.406.023 136.59 27.476 186.355 77.3s77.156 116.051 77.133 186.485C583.582 462.69 465.34 580.94 320.05 580.94zm144.586-197.418c-7.922-3.968-46.883-23.132-54.149-25.78-7.258-2.645-12.547-3.962-17.824 3.968-5.285 7.93-20.469 25.781-25.094 31.066-4.625 5.29-9.242 5.953-17.168 1.985-7.925-3.965-33.457-12.336-63.726-39.332-23.555-21.012-39.457-46.961-44.082-54.89-4.617-7.938-.04-11.813 3.476-16.173 8.578-10.652 17.168-21.82 19.809-27.105 2.644-5.29 1.32-9.918-.664-13.883-1.977-3.965-17.824-42.969-24.426-58.84-6.437-15.445-12.965-13.36-17.832-13.601-4.617-.231-9.902-.278-15.187-.278-5.282 0-13.868 1.98-21.133 9.918-7.262 7.934-27.73 27.102-27.73 66.106s28.394 76.683 32.355 81.972c3.96 5.29 55.879 85.328 135.367 119.649 18.906 8.172 33.664 13.043 45.176 16.695 18.984 6.031 36.254 5.18 49.91 3.14 15.226-2.277 46.879-19.171 53.488-37.68 6.602-18.51 6.602-34.374 4.617-37.683-1.976-3.304-7.261-5.285-15.183-9.254zm0 0"
+                        fill="#ffffff" opacity="1" data-original="#000000" class=""></path>
+                </g>
+            </svg>
+        </button>
+    </div>
+    <!-- WhatsApp Chat Button end -->
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
